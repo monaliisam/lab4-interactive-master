@@ -1,0 +1,531 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(213,46,160,0.7),
+    rgba(147, 152, 248, 0.7))
+    , url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    background: red;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 1.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.cool-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cool-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+/* ------ general formatting ----------- */
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* ------- Menu ------  */
+.menu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+/* Drop Shadow Effect */
+.menu-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0 ,0,0.2);
+}
+
+/* -------------- Store --------------- */
+.store{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.store-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden; /*To clip content and don't allow scrolling */
+}
+
+.store-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;  /*Chose any color to see the style then change it to transparent */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(266,0,0,0.7);
+}
+
+/* To adjust the titles within the image */
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    position: absolute;
+    bottom: 0;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    
+}
+
+/* ---------- Testimonials ----------- */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; 
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.center{
+    margin: auto;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right:30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa-sharp{
+    color: #f44336;
+}
+
+/* --------- Contact Us Section ------------ */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* --------- Footer Section --------- */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer h4{
+    margin-top:20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.footer .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/* -------------- Contact Us Page ------  */
+.other-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #6a2929;
+}
+
+.other-header nav ul li a{
+    color:#6a2929;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto; 
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5, .contact-col h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+/* --------- Form Elements -------- */
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover{
+    color:#fff;
+
+}
+
+.contact-col input, .contact-col textarea{
+    width:100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    /*box-sizing: border-box;*/
+}
+
+/* ------ Menu Page ------------- */
+.meals{
+    width: 100%;
+    margin: auto; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px #333;
+}
+
+.meal-header{
+    position: relative;
+}
+
+.meal-header .random{
+    position: absolute;
+    top:10px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.meal-header img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.meal-body .fav-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+   
+}
+
+.meal-body .fav-btn.active{
+    color: lightgray;
+}
+
+.search-box{
+    margin: 10px auto;
+}
+
+
+/* ------ Blog Page ------ */
+/* ------ Color Section ----- */
+.information{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #f1f5f8;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+.color-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.color-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+/* ----- Reviews Section ------ */
+.prev-btn,
+.next-btn {
+  font-size: 12px;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.random-btn{
+    margin: auto;
+    margin-top: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.random-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+
+/* -------------- Store --------------- */
+.menuItems{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.menu-wrap-section{
+    flex-wrap: wrap;
+}
+.menu-item-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden; /*To clip content and don't allow scrolling */
+}
+
+.menu-item-col img{
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+/* ----- Responsive Design ------- */
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: fixed;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .testimonial-col img{
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}

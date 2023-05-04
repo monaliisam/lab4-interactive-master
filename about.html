@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cafe Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="script.js" defer></script>
+        <script type="text/javascript" src="1-colors.js" defer></script>
+        <script type="text/javascript" src="2-reviews.js" defer></script>
+        <script type="text/javascript" src="3-menu.js" defer></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+               <a href="index.html"><img src="images/logo.png" alt=""></a>
+               <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+               </div>
+               <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>About us</h1>
+                <p>
+                    Welcome to your cozy and friendly spot for delicious coffee, tea, pastries, sandwiches, salads, and more.
+                   <br> Whether you need a quick breakfast on the go, a relaxing lunch break, or a sweet treat in the afternoon, we have something for everyone.
+                </p>
+                <a href="" class="cool-btn">Visit us to know more!</a>
+            </div>
+        </section>
+        <!------------- Information Section------------->
+        <div class="information">
+        <h2>Background color : 
+            <span class="color">#f1f5f8</span></h2>
+        <p>This is our playground area push the button and see what happens</p>
+        <button class="color-btn" id="colorChanger">Click Me</button>
+        </div>
+        <!------------- Reviews Section------------->
+        <div class="testimonials">
+            <h1>Reviews</h1>
+            
+            <div class="row">
+                <div class="testimonial-col center">
+                    <img id="person-img" src="images/user1.jpg" alt="">
+                    <div>
+                        <p id="comment">I adore the cozy touch of the place, and I like the sweet taste of the pastries while sipping my favorite espresso</p>
+                        <h3 id="reviewAuthor">Simantha Johnson</h3>
+                        <p id="job">UX Designer </p>
+                
+                    <!--- prev next buttons ---->
+                        <button class="prev-btn">
+                          <i class="fas fa-chevron-left"></i>  
+                        </button>
+                        <button class="next-btn">
+                            <i class="fas fa-chevron-right"></i>  
+                          </button>
+                    </div>
+                </div> 
+            </div>
+            <button class="random-btn">Random Review!</button>
+        </div>
+        <!------ Menu Items ------->
+        <div class="menuItems">
+            <h1>Our Menu</h1>
+            <div class="btn-container">
+                <button class="filter-btn" type="button" data-id="all">All</button>
+                <button class="filter-btn" type="button" data-id="breakfast">Breakfast</button>
+                <button class="filter-btn" type="button" data-id="lunch">Lunch</button>
+                <button class="filter-btn" type="button" data-id="shakes">Shakes</button>
+        </div>
+            <div class="row menu-wrap-section">
+                <div class="menu-item-col">
+                    <img src="images/product1-croissant.png" alt="">
+                    <div class="item-info">
+                        <header>
+                            <h4>buttermilk</h4>
+                            <h4 class="price">$15</h4>
+                        </header>
+                        <p class="item-text">kjdjsd sdkhjsdlkkadhdsas dadskjlds kljsadlkjad alsdj
+                            <br>jkskjsalkjdjksd ksjdl kasjd <br>
+                            alksdjlaksjd kljasd 
+                            sjadhjk kasjhdl asdklsajd asdl;jkaskdj
+                        </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!-- ------------ Footer ----------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Finally you have reaced the bottom of the page congratualtions on this new experience, hope you have enjoyed it</p>
+            <div class="icons">
+                <i class="fa fa-brands fa-facebook"></i>
+                <i class="fa fa-brands fa-instagram"></i>
+                <i class="fa fa-brands fa-youtube"></i>
+                <i class="fa fa-brands fa-linkedin"></i>
+            </div>
+            <p>Copyrights &#169;2023</p>
+        </section>
+    </body>
+</html>

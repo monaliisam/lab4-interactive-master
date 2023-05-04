@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cafe Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="script.js" defer></script>
+        <script type="text/javascript" src="meal.js" defer></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+               <a href="index.html"><img src="images/logo.png" alt=""></a>
+               <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+               </div>
+               <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Cozy Local Cafe</h1>
+                <p>
+                    Welcome to your cozy and friendly spot for delicious coffee, tea, pastries, sandwiches, salads, and more.
+                   <br> Whether you need a quick breakfast on the go, a relaxing lunch break, or a sweet treat in the afternoon, we have something for everyone.
+                </p>
+                <a href="" class="cool-btn">Visit us to know more!</a>
+            </div>
+        </section>
+        <!-- ----- Store Section -------->
+        <section class="store">
+            <h1>Our unique cafe</h1>
+            <p>Check out favorite dish recipes</p>
+            <div class="row">
+                <div class="store-col">
+                    <img src="images/product1-croissant.png" alt="">
+                    <div class="layer">
+                        <h3>Croissant</h3>
+                    </div>
+                </div>
+                <div class="store-col">
+                    <img src="images/product2-cake.png" alt="cakes">
+                    <div class="layer">
+                        <h3>Cake</h3>
+                    </div>
+                </div>
+                <div class="store-col">
+                    <img src="images/product3-cookies.png" alt="cookies">
+                    <div class="layer">
+                        <h3>Cookies</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for your fav meal" id="search-term">
+                    <button id="search"><i class="fas fa-search"></i> </button>
+                </div>
+            </div>
+            <div class="meals" id="meals">
+            <!----
+                <div class="meal-header">
+                    <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="">
+                </div>
+                <div class="meal-body">
+                    <h3>Meal Name</h3>
+                    <button class="fav-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                -->
+            </div>
+        </section>
+       
+        <!-- ------------ Footer ----------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Finally you have reaced the bottom of the page congratualtions on this new experience, hope you have enjoyed it</p>
+            <div class="icons">
+                <i class="fa fa-brands fa-facebook"></i>
+                <i class="fa fa-brands fa-instagram"></i>
+                <i class="fa fa-brands fa-youtube"></i>
+                <i class="fa fa-brands fa-linkedin"></i>
+            </div>
+            <p>Copyrights &#169;2023</p>
+        </section>
+    </body>
+</html>
